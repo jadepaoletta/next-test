@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         < Header />
-        <h1 className="hover:text-slate-500"><Link href="/" prefetch={true}>Home</Link></h1>
-        <h1 className="hover:text-slate-500"><Link href="/about" prefetch={true}>About</Link></h1>
-        <h1 className="hover:text-slate-500"><Link href="/test-page" prefetch={true}>Test Page</Link></h1>
+        <h1 className="hover:text-slate-500"><Link href="/" >Home</Link></h1>
+        <h1 className="hover:text-slate-500"><Link href="/about" >About</Link></h1>
+        <h1 className="hover:text-slate-500"><Link href="/test-page" >Test Page</Link></h1>
         {children}
       </body>
     </html>
