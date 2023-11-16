@@ -10,10 +10,10 @@ const redisClient = createClient({
   .on("error", (err) => console.log("Redis Client Error", err))
   .connect();
 
-  
-await client.set('key', 'value');
+
+await redisClient.set('key', 'value');
 const value = await client.get('key');
-await client.disconnect();
+await redisClient.disconnect();
 
 export default function Home() {
   return (
