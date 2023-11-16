@@ -12,7 +12,7 @@ const redisClient = createClient({
 
 
 await redisClient.set('key', 'value');
-const value = await client.get('key');
+const value = await redisClient.get('key');
 await redisClient.disconnect();
 
 export default function Home() {
